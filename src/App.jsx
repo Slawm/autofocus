@@ -8,26 +8,22 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      
+      <h1>autofocus iframe test</h1>
+      <button >
+        <a href="https://msp.retailsuite.cgi.com/msp/php/std_meti/POINT/msp_POINT_g_SPPTS_SAI.php?p_nogci=11318&p_type_appel=M&p_cdcat=DEV&p_nopts=223588">BOUTON 1</a>
+    </button>
+    <br/><br/>
+    <button>
+        <a autofocus class="input" href="https://www.google.fr/">BOUTON 2</a>
+    </button>
+    <br/><br/>
+    <button >
+        <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/iframe">BOUTON 3</a>
+    </button>
+    <script>
+        document.querySelector('.input').focus();
+    </script>
     </>
   )
 }
