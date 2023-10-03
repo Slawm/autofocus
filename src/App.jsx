@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <h1>autofocus iframe test</h1>
-      <div autoFocus color="green" onClick={e => console.log("Clicked")}>
+      <div autoFocus backgroundColor="green" onClick={e => console.log("Clicked")}>
         DIV AUTOFOCUS
       </div>
       <input type="text" />
