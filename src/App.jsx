@@ -8,22 +8,27 @@ function App() {
 
   return (
     <>
-      
       <h1>autofocus iframe test</h1>
-      <button >
-        <a href="https://msp.retailsuite.cgi.com/msp/php/std_meti/POINT/msp_POINT_g_SPPTS_SAI.php?p_nogci=11318&p_type_appel=M&p_cdcat=DEV&p_nopts=223588">BOUTON 1</a>
-    </button>
-    <br/><br/>
-    <button>
-        <a autofocus class="input" href="https://www.google.fr/">BOUTON 2</a>
-    </button>
-    <br/><br/>
-    <button >
-        <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/iframe">BOUTON 3</a>
-    </button>
-    <script>
-        document.querySelector('.input').focus();
-    </script>
+      <input autoFocus type="text" />
+      <br />
+      <br />
+      <button>
+        <a href="https://msp.retailsuite.cgi.com/msp/php/std_meti/POINT/msp_POINT_g_SPPTS_SAI.php?p_nogci=11318&p_type_appel=M&p_cdcat=DEV&p_nopts=223588">
+          BOUTON 1
+        </a>
+      </button>
+      <br />
+      <br />
+      <button>
+        <a href="https://www.google.fr/">BOUTON 2</a>
+      </button>
+      <br />
+      <br />
+      <button>
+        <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/iframe">
+          BOUTON 3
+        </a>
+      </button>
     </>
   )
 }
