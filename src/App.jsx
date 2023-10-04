@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -6,12 +6,15 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
 
-  document.getElementById('focusDiv').focus();
+  const focusRef = useRef(null);
+    useEffect(() => {
+        focusRef.current.focus()
+    })
 
   return (
     <>
       <h1>autofocus iframe test</h1>
-      <div tabIndex="0" id="focusDiv" style={{backgroundColor:"green"}}  onKeyDown={e=>console.log("keyDown iframe")} >
+      <div tabIndex="0" ref={focusRef} style={{backgroundColor:"green"}}  onKeyDown={e=>console.log("keyDown iframe")} >
         DIV AUTOFOCUS
       </div>
       <input type="text" />
