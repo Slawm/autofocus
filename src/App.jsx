@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <h1>autofocus iframe test</h1>
-      <div tabIndex="0" id="focusDiv"style={{backgroundColor:"green"}}  onKeyDown={e=>console.log("keyDown iframe")} >
+      <div tabIndex="0" id="focusDiv" style={{backgroundColor:"green"}}  onKeyDown={e=>console.log("keyDown iframe")} >
         DIV AUTOFOCUS
       </div>
       <input type="text" />
