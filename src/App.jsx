@@ -6,7 +6,7 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
 
-  document.getElementById('mainHeader').focus();
+  document.getElementById('focusDiv').focus();
 
   return (
     <>
